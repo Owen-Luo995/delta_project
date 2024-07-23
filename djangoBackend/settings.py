@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['sbx-hotel-srv1.abdn.ac.uk', '*', 'localhost']
 
-CSRF_TRUSTED_ORIGINS = ['https://localhost', 'https://127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://localhost', '*']
 
 # Application definition
 
