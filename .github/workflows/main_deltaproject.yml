@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - DeltaProject
+name: Build and deploy Python app to Azure Web App - deltaProject
 
 on:
   push:
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_06F63CA7150C4829B623104FCCE2C1F0 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_E1729506AA2146E5A1C57C618469C9B8 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_755B0DFC20354A1F830ADB8E4F81C2FB }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_98294A09D67542B5B2BFDA86A0F709AE }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_F893943324714923A14F686ADFE4FBEA }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_494AA21034F648F29831433B51590942 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'DeltaProject'
+          app-name: 'deltaProject'
           slot-name: 'Production'
           
